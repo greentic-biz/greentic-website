@@ -2,14 +2,18 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink } from "lucide-react";
 
-const codeSnippet = `# Install Greentic CLI
-npm install -g @greentic/cli
+const codeSnippet = `# Install Greentic
+cargo binstall gtc
+gtc install
 
-# Create a new workflow
-greentic init my-workflow
+# Create a new solution
+gtc wizard --answers https://...
+
+# Setup the solution
+gtc setup ./name-bundle --answers https://...
 
 # Deploy to production
-greentic deploy --env production`;
+gtc start ./name-bundle`;
 
 const DeveloperDocs = () => {
   const ref = useRef(null);
