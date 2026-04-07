@@ -21,6 +21,7 @@ const Footer = () => {
             <a href="mailto:hello@greentic.ai" className="transition-colors hover:text-primary">{t.footer.contact}</a>
             <a href="#sponsors" className="transition-colors hover:text-primary">{t.footer.partners}</a>
             <a href="https://www.linkedin.com/company/greentic-ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a>
+            <a href="https://greentic-ai.medium.com/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.blog}</a>
           </div>
         </div>
 

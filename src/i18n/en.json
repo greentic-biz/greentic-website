@@ -6,6 +6,7 @@
     "howItWorks": "How It Works",
     "partners": "Partners",
     "docs": "Docs",
+    "blog": "Blog",
     "bookPilot": "Book a Pilot",
     "toggleTheme": "Toggle theme"
   },
@@ -354,6 +355,7 @@
     "contact": "Contact",
     "partners": "Partners",
     "linkedin": "LinkedIn",
+    "blog": "Blog",
     "copyright": "© {year} Greentic.ai — AI automation for real business systems."
   },
   "languageSelector": {

@@ -18,6 +18,7 @@ const Navbar = () => {
     { label: t.nav.howItWorks, href: "#how-it-works" },
     { label: t.nav.partners, href: "#sponsors" },
     { label: t.nav.docs, href: "https://docs.greentic.ai", external: true },
+    { label: t.nav.blog, href: "https://greentic-ai.medium.com/", external: true },
   ];
 
   return (
