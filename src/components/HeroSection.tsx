@@ -5,19 +5,16 @@ import heroBg from "@/assets/hero-bg.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen overflow-hidden pt-16">
-      {/* Background image */}
+      {/* Background image — subtle, decorative */}
       <div className="absolute inset-0">
         <img
           src={heroBg}
           alt=""
           width={1920}
           height={1080}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover opacity-15"
         />
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-background/80" />
-        {/* Bottom gradient fade */}
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background" />
       </div>
 
       {/* Glow orbs */}
