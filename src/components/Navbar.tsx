@@ -2,20 +2,23 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
+import { useI18n } from "@/i18n/I18nProvider";
+import LanguageSelector from "@/components/LanguageSelector";
 import greenticLogo from "@/assets/greentic-logo.png";
-
-const navLinks = [
-  { label: "Platform", href: "#demos" },
-  { label: "Demos", href: "#demos" },
-  { label: "Use Cases", href: "#use-cases" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Partners", href: "#sponsors" },
-  { label: "Docs", href: "https://docs.greentic.ai", external: true },
-];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const { t } = useI18n();
+
+  const navLinks = [
+    { label: t.nav.platform, href: "#demos" },
+    { label: t.nav.demos, href: "#demos" },
+    { label: t.nav.useCases, href: "#use-cases" },
+    { label: t.nav.howItWorks, href: "#how-it-works" },
+    { label: t.nav.partners, href: "#sponsors" },
+    { label: t.nav.docs, href: "https://docs.greentic.ai", external: true },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
@@ -39,10 +42,11 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <LanguageSelector />
           <button
             onClick={toggleTheme}
             className="rounded-lg border border-border p-2 text-muted-foreground transition-colors hover:text-foreground hover:border-primary/40"
-            aria-label="Toggle theme"
+            aria-label={t.nav.toggleTheme}
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
           </button>
@@ -50,7 +54,7 @@ const Navbar = () => {
             href="#cta"
             className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 glow-primary"
           >
-            Book a Pilot
+            {t.nav.bookPilot}
           </a>
         </div>
 
@@ -78,8 +82,18 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              <div className="flex items-center gap-3">
+                <LanguageSelector />
+                <button
+                  onClick={toggleTheme}
+                  className="rounded-lg border border-border p-2 text-muted-foreground transition-colors hover:text-foreground hover:border-primary/40"
+                  aria-label={t.nav.toggleTheme}
+                >
+                  {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+                </button>
+              </div>
               <a href="#cta" className="rounded-lg bg-primary px-4 py-2 text-center text-sm font-semibold text-primary-foreground">
-                Book a Pilot
+                {t.nav.bookPilot}
               </a>
             </div>
           </motion.div>
