@@ -122,8 +122,8 @@
   }
   .bg-grid {
     background-image: 
-      linear-gradient(hsl(220 16% 18% / 0.3) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(220 16% 18% / 0.3) 1px, transparent 1px);
+      linear-gradient(hsl(var(--border) / 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.3) 1px, transparent 1px);
     background-size: 60px 60px;
   }
   .border-glow {
