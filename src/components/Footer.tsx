@@ -20,7 +20,7 @@ const Footer = () => {
             <a href="https://github.com/greenticai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.github}</a>
             <a href="mailto:hello@greentic.ai" className="transition-colors hover:text-primary">{t.footer.contact}</a>
             <a href="#sponsors" className="transition-colors hover:text-primary">{t.footer.partners}</a>
-            <a href="https://www.linkedin.com/company/greentic-ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a>="https://www.linkedin.com/company/greentic-ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a> target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a>
+            <a href="https://www.linkedin.com/company/greentic-ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a>
           </div>
         </div>
 
