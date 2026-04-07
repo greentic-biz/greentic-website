@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const codeSnippet = `# Install Greentic
 cargo binstall gtc
