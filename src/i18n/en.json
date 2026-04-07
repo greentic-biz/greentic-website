@@ -189,6 +189,56 @@
       "deployedRunning": "Deployed & Running"
     }
   },
+  "comparison": {
+    "title": "How Greentic is",
+    "titleHighlight": "different",
+    "subtitle": "Not another chatbot framework. Greentic automates real business processes with full control.",
+    "howLabel": "How it works",
+    "resultLabel": "Result",
+    "agents": {
+      "title": "Agent Frameworks",
+      "subtitle": "LangChain, CrewAI, etc.",
+      "how": [
+        "LLM decides what to do",
+        "Dynamic tool calling",
+        "Flexible but unpredictable"
+      ],
+      "result": [
+        "Hard to control",
+        "Hard to audit",
+        "Risky in production"
+      ]
+    },
+    "copilots": {
+      "title": "Enterprise Copilots",
+      "subtitle": "Microsoft Copilot Studio, etc.",
+      "how": [
+        "Chat-first interface",
+        "Internal productivity tools",
+        "Limited control over execution"
+      ],
+      "result": [
+        "Good for assistance",
+        "Not for core business automation",
+        "Limited integration depth"
+      ]
+    },
+    "greentic": {
+      "title": "Greentic",
+      "subtitle": "AI automation platform",
+      "how": [
+        "Deterministic workflows",
+        "Explicit capabilities (MCP / APIs)",
+        "AI used where needed, not everywhere",
+        "Full control + audit"
+      ],
+      "result": [
+        "Predictable execution",
+        "Production-ready",
+        "Real business processes automated"
+      ]
+    }
+  },
   "useCases": {
     "title": "Real workflows,",
     "titleHighlight": "real outcomes",
