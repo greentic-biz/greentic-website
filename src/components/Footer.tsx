@@ -17,7 +17,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
             <a href="https://docs.greentic.ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.docs}</a>
-            <a <a href="https://github.com/greenticai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.github}</a> target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.github}</a>
+            <a href="https://github.com/greenticai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.github}</a> target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.github}</a> target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.github}</a>
             <a href="mailto:hello@greentic.ai" className="transition-colors hover:text-primary">{t.footer.contact}</a>
             <a href="#sponsors" className="transition-colors hover:text-primary">{t.footer.partners}</a>
             <a href="https://linkedin.com/company/greentic" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a>
