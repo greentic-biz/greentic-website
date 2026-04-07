@@ -12,9 +12,10 @@ const HeroSection = () => {
           alt=""
           width={1920}
           height={1080}
-          className="h-full w-full object-cover opacity-15"
+          className="h-full w-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background" />
+        <div className="absolute inset-0 bg-background/60" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </div>
 
       {/* Glow orbs */}
