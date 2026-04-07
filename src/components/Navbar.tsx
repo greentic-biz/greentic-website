@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 import greenticLogo from "@/assets/greentic-logo.png";
 
 const navLinks = [
@@ -14,6 +15,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
@@ -37,6 +39,13 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <button
+            onClick={toggleTheme}
+            className="rounded-lg border border-border p-2 text-muted-foreground transition-colors hover:text-foreground hover:border-primary/40"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
           <a
             href="#cta"
             className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 glow-primary"
