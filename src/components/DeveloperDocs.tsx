@@ -53,7 +53,7 @@ const DeveloperDocs = () => {
             </pre>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
               href="https://docs.greentic.ai"
               target="_blank"
@@ -61,6 +61,14 @@ const DeveloperDocs = () => {
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary px-6 py-3 font-semibold text-secondary-foreground transition-all hover:border-primary/40"
             >
               <ExternalLink size={18} /> Read the Docs
+            </a>
+            <a
+              href="https://github.com/greenticai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary px-6 py-3 font-semibold text-secondary-foreground transition-all hover:border-primary/40"
+            >
+              <Github size={18} /> GitHub
             </a>
           </div>
         </motion.div>
