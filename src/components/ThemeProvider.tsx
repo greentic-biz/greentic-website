@@ -5,16 +5,16 @@ type Theme = "dark" | "light";
 const ThemeContext = createContext<{
   theme: Theme;
   toggleTheme: () => void;
-}>({ theme: "dark", toggleTheme: () => {} });
+}>({ theme: "light", toggleTheme: () => {} });
 
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
-      return (localStorage.getItem("theme") as Theme) || "dark";
+      return (localStorage.getItem("theme") as Theme) || "light";
     }
-    return "dark";
+    return "light";
   });
 
   useEffect(() => {
