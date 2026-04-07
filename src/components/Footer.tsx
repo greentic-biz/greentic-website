@@ -1,11 +1,11 @@
+import greenticLogo from "@/assets/greentic-logo.png";
+
 const Footer = () => (
   <footer className="border-t border-border py-12">
     <div className="container mx-auto px-4">
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <span className="text-sm font-bold text-primary-foreground">G</span>
-          </div>
+          <img src={greenticLogo} alt="Greentic.ai logo" className="h-8 w-8" />
           <span className="font-display text-lg font-bold text-foreground">
             Greentic<span className="text-primary">.ai</span>
           </span>
