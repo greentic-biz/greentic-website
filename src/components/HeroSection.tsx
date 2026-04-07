@@ -12,7 +12,7 @@ const HeroSection = () => {
           alt=""
           width={1920}
           height={1080}
-          className="h-full w-full object-cover opacity-50"
+          className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-background/40" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
