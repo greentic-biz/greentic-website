@@ -1,3 +1,5 @@
+import greenticLogo from "@/assets/greentic-logo.png";
+
 const Footer = () => (
   <footer className="border-t border-border py-12">
     <div className="container mx-auto px-4">
