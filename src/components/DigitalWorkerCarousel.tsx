@@ -175,16 +175,14 @@ const DigitalWorkerCarousel = () => {
     return () => clearInterval(interval);
   }, [isHovered]);
 
-  // Scroll to active card
+  // Scroll to active card (without moving the page)
   useEffect(() => {
     if (!scrollRef.current) return;
-    const cards = scrollRef.current.children;
-    if (cards[activeIndex]) {
-      (cards[activeIndex] as HTMLElement).scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center",
-      });
+    const container = scrollRef.current;
+    const card = container.children[activeIndex] as HTMLElement | undefined;
+    if (card) {
+      const scrollLeft = card.offsetLeft - container.offsetWidth / 2 + card.offsetWidth / 2;
+      container.scrollTo({ left: scrollLeft, behavior: "smooth" });
     }
   }, [activeIndex]);
 
