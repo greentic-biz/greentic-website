@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen overflow-hidden pt-16">
       {/* Background image — subtle, decorative */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 -z-10">
         <img
           src={heroBg}
           alt=""
