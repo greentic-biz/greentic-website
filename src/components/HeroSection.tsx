@@ -35,7 +35,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 max-w-2xl text-center text-lg text-muted-foreground md:text-xl"
         >
-          Build real automation workflows using MCP and OAuth. Deploy multilingual AI assistants across web, chat, and messaging.
+          Automate your core business processes with multilingual AI assistants — reducing cost, increasing speed, and ensuring full auditability.
         </motion.p>
 
         <motion.div
