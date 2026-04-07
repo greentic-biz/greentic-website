@@ -5,7 +5,7 @@ import { useTheme } from "@/components/ThemeProvider";
 import greenticLogo from "@/assets/greentic-logo.png";
 
 const navLinks = [
-  { label: "Platform", href: "#features" },
+  { label: "Platform", href: "#demos" },
   { label: "Demos", href: "#demos" },
   { label: "Use Cases", href: "#use-cases" },
   { label: "How It Works", href: "#how-it-works" },
