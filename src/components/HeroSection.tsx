@@ -74,46 +74,6 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Animated workflow diagram */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-16 w-full max-w-4xl"
-        >
-          <div className="rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm glow-primary">
-            <div className="flex flex-col items-center gap-4 md:flex-row md:gap-0">
-              {[
-                { label: "Input", sub: "Multi-language", icon: "🌍" },
-                { label: "Workflow", sub: "Deterministic", icon: "⚡" },
-                { label: "MCP Tools", sub: "API + OAuth", icon: "🔧" },
-                { label: "AI Layer", sub: "Optional LLM", icon: "🧠" },
-                { label: "Output", sub: "Any language", icon: "✅" },
-              ].map((step, i) => (
-                <div key={step.label} className="flex items-center">
-                  <motion.div
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ delay: 0.7 + i * 0.15 }}
-                    className="flex flex-col items-center rounded-xl border border-border bg-secondary/50 px-5 py-4 text-center min-w-[110px]"
-                  >
-                    <span className="text-2xl mb-1">{step.icon}</span>
-                    <span className="text-sm font-semibold text-foreground">{step.label}</span>
-                    <span className="text-xs text-muted-foreground">{step.sub}</span>
-                  </motion.div>
-                  {i < 4 && (
-                    <motion.div
-                      initial={{ scaleX: 0 }}
-                      animate={{ scaleX: 1 }}
-                      transition={{ delay: 0.8 + i * 0.15 }}
-                      className="hidden md:block h-px w-8 bg-primary/40 mx-1"
-                    />
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
