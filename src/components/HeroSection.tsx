@@ -4,25 +4,26 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden pt-16">
-      {/* Background image — subtle, decorative */}
-      <div className="absolute inset-0 -z-10">
+    <section className="relative isolate min-h-screen overflow-hidden pt-16">
+      {/* Background image */}
+      <div className="pointer-events-none absolute inset-0 z-0">
         <img
           src={heroBg}
           alt=""
           width={1920}
           height={1080}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-center opacity-45 dark:opacity-100"
         />
-        <div className="absolute inset-0 bg-background/40" />
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute inset-0 bg-background/0 dark:bg-background/50" />
+        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-background to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background via-background/85 to-transparent" />
       </div>
 
       {/* Glow orbs */}
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-primary/5 blur-[120px]" />
-      <div className="pointer-events-none absolute top-1/3 -right-40 h-[400px] w-[400px] rounded-full bg-primary/8 blur-[100px]" />
+      <div className="pointer-events-none absolute -top-40 left-1/2 z-[1] h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-primary/5 blur-[120px]" />
+      <div className="pointer-events-none absolute top-1/3 -right-40 z-[1] h-[400px] w-[400px] rounded-full bg-primary/8 blur-[100px]" />
 
-      <div className="container mx-auto flex flex-col items-center px-4 pt-20 pb-12 lg:pt-32">
+      <div className="container relative z-10 mx-auto flex flex-col items-center px-4 pt-20 pb-12 lg:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
