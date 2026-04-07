@@ -21,6 +21,7 @@ const Index = () => (
     <MultilingualSection />
     <FeaturesSection />
     <LiveDemosSection />
+    <ComparisonSection />
     <UseCasesSection />
     <HowItWorksSection />
     <BuiltForRealSection />
