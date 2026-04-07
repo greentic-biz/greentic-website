@@ -1,0 +1,362 @@
+{
+  "nav": {
+    "platform": "Platform",
+    "demos": "Demos",
+    "useCases": "Use Cases",
+    "howItWorks": "How It Works",
+    "partners": "Partners",
+    "docs": "Docs",
+    "bookPilot": "Book a Pilot",
+    "toggleTheme": "Toggle theme"
+  },
+  "hero": {
+    "badge": "Live AI Automation Platform",
+    "title": "Connect AI to your business systems —",
+    "titleHighlight": "serve every customer in their own language",
+    "subtitle": "Automate your core business processes with multilingual AI assistants — reducing cost, increasing speed, and ensuring full auditability.",
+    "ctaDemos": "See Live Demos",
+    "ctaMultilingual": "Try Multilingual Assistant",
+    "ctaPilot": "Book a Pilot"
+  },
+  "digitalWorkers": {
+    "title": "See digital workers",
+    "titleHighlight": "in action",
+    "subtitle": "Real business processes automated — across systems, channels, and languages",
+    "prevWorker": "Previous worker",
+    "nextWorker": "Next worker",
+    "goToWorker": "Go to worker",
+    "input": "INPUT",
+    "process": "PROCESS",
+    "system": "SYSTEM",
+    "output": "OUTPUT",
+    "workers": [
+      {
+        "title": "Multilingual Website Assistant",
+        "input": "Customer asks a question in French",
+        "action": "Retrieves product data via API, translates response",
+        "outcome": "Answers fluently in French with accurate info",
+        "steps": [
+          "Bonjour, quel est le prix?",
+          "Language detected: FR",
+          "Query product API",
+          "Translate & format",
+          "Le prix est 49€ — livraison gratuite"
+        ]
+      },
+      {
+        "title": "Customer Self-Service",
+        "input": "Customer submits support request via chat",
+        "action": "Fetches CRM data, checks knowledge base, drafts response",
+        "outcome": "Issue resolved, ticket updated, customer satisfied",
+        "steps": [
+          "My order hasn't arrived",
+          "Lookup customer in CRM",
+          "Check shipping provider API",
+          "Generate resolution",
+          "Shipped today — tracking: TRK829"
+        ]
+      },
+      {
+        "title": "IT Helpdesk Automation",
+        "input": "Employee sends Teams message about access issue",
+        "action": "Checks identity provider, triggers provisioning API",
+        "outcome": "Access granted, employee notified, audit logged",
+        "steps": [
+          "Can't access the reporting tool",
+          "Verify identity via SSO",
+          "Check role permissions",
+          "Provision access via API",
+          "Access granted ✓ — logged"
+        ]
+      },
+      {
+        "title": "Invoice Approval Workflow",
+        "input": "Invoice received from supplier",
+        "action": "Validates amount, routes to approver, records decision",
+        "outcome": "Invoice approved, payment scheduled, audit trail complete",
+        "steps": [
+          "Invoice #4821 — €12,400",
+          "Match to purchase order",
+          "Route to finance manager",
+          "Approved by J. Smith",
+          "Payment scheduled — logged"
+        ]
+      },
+      {
+        "title": "Order Status Assistant",
+        "input": "Customer asks: Where is my order?",
+        "action": "Queries order system and logistics provider",
+        "outcome": "Real-time status with estimated delivery",
+        "steps": [
+          "Where is order #9182?",
+          "Query order database",
+          "Check logistics API",
+          "Format delivery ETA",
+          "Out for delivery — ETA 2pm"
+        ]
+      }
+    ],
+    "inputLabel": "Input:",
+    "actionLabel": "Action:",
+    "outcomeLabel": "Outcome:"
+  },
+  "multilingual": {
+    "badge": "Core Differentiator",
+    "title": "Your business,",
+    "titleHighlight": "every language",
+    "subtitle": "Customers interact in their own language. Workflows remain deterministic. Systems stay consistent.",
+    "quote": "\"Your customer speaks Spanish. Your systems speak English. Greentic connects both.\"",
+    "demoTitle": "Multilingual Assistant Demo"
+  },
+  "features": {
+    "title": "From AI to",
+    "titleHighlight": "real business automation",
+    "subtitle": "Industry-specific solutions, powered by Greentic",
+    "items": [
+      {
+        "industry": "Telecom",
+        "title": "Chat with your network",
+        "description": "Let engineers ask AI to find the root cause of network issues — across logs, alarms, and topology — in seconds, not hours."
+      },
+      {
+        "industry": "Retail",
+        "title": "Self-service that sells",
+        "description": "Customers browse, ask questions, and buy — all through an AI assistant that knows your catalog, pricing, and policies."
+      },
+      {
+        "industry": "Cloud & IT",
+        "title": "Automate complex setup",
+        "description": "Provision environments, configure networks, and onboard tenants — repetitive infrastructure tasks, fully automated."
+      },
+      {
+        "industry": "Any Industry",
+        "title": "Eliminate repetitive work",
+        "description": "Every business has boring, repetitive tasks. Greentic turns them into reliable, automated workflows — no matter the industry."
+      }
+    ]
+  },
+  "platform": {
+    "badge": "⚡ Interactive",
+    "title": "Platform",
+    "titleHighlight": "Architecture",
+    "subtitle": "Explore how Greentic builds from atomic components to fully autonomous Digital Workers",
+    "stepOf": "Step {current} of {total}",
+    "prev": "← Previous",
+    "next": "Next →",
+    "steps": [
+      {
+        "label": "Component",
+        "headline": "It starts with a Component",
+        "description": "A Component is the atomic building block. It connects directly to one of your core systems — CRM, ERP, ticketing, databases, APIs — via MCP and OAuth."
+      },
+      {
+        "label": "Flow",
+        "headline": "Components join into a Flow",
+        "description": "Multiple Components get wired together in a deterministic Flow. Flows orchestrate the order of execution — ensuring consistency, auditability, and control."
+      },
+      {
+        "label": "Application Pack",
+        "headline": "Flows become an Application Pack",
+        "description": "Multiple Flows and Components get packaged into an Application Pack — a complete automation for a specific business process like customer onboarding or order management."
+      },
+      {
+        "label": "Bundle = Digital Worker",
+        "headline": "Bundles create a Digital Worker",
+        "description": "Application Packs and Extension Packs get bundled into a Bundle — your Digital Worker. It gets deployed, runs autonomously, and handles an entire domain of work."
+      }
+    ],
+    "visualLabels": {
+      "component": "Component",
+      "crm": "CRM",
+      "erp": "ERP",
+      "ticketing": "Ticketing",
+      "database": "Database",
+      "receiveRequest": "Receive request",
+      "lookUpCustomer": "Look up customer",
+      "checkInventory": "Check inventory",
+      "sendResponse": "Send response",
+      "onboardingFlow": "Onboarding Flow",
+      "verificationFlow": "Verification Flow",
+      "notificationFlow": "Notification Flow",
+      "authComponent": "Auth Component",
+      "customerSupportAppPack": "Customer Support App Pack",
+      "salesAppPack": "Sales App Pack",
+      "multilingualExtPack": "Multilingual Ext Pack",
+      "analyticsExtPack": "Analytics Ext Pack",
+      "applicationPack": "Application Pack",
+      "digitalWorker": "Digital Worker",
+      "deployedRunning": "Deployed & Running"
+    }
+  },
+  "useCases": {
+    "title": "Real workflows,",
+    "titleHighlight": "real outcomes",
+    "items": [
+      {
+        "title": "Customer Self-Service",
+        "input": "Customer request (any language)",
+        "action": "Identify → Execute → Confirm",
+        "output": "Order placed, account updated, issue resolved",
+        "systems": "Shopify, Salesforce, WhatsApp",
+        "deploy": "5 days"
+      },
+      {
+        "title": "IT Helpdesk Automation",
+        "input": "Employee ticket / chat",
+        "action": "Classify → Execute → Resolve",
+        "output": "Automated ticket resolution",
+        "systems": "ServiceNow, Jira, Slack",
+        "deploy": "7 days"
+      },
+      {
+        "title": "Sales Assistant",
+        "input": "Lead inquiry / form",
+        "action": "Qualify → Enrich → Route",
+        "output": "Qualified lead in CRM",
+        "systems": "HubSpot, Salesforce, Email",
+        "deploy": "5 days"
+      },
+      {
+        "title": "Data Workflows",
+        "input": "Data event / webhook",
+        "action": "Transform → Validate → Store",
+        "output": "Clean data in target system",
+        "systems": "APIs, Databases, S3",
+        "deploy": "3 days"
+      }
+    ],
+    "inputLabel": "Input →",
+    "actionLabel": "Action →",
+    "outputLabel": "Output →"
+  },
+  "howItWorks": {
+    "title": "Enterprise-ready",
+    "titleHighlight": "AI automation",
+    "titleSuffix": "platform",
+    "subtitle": "Automate real business processes across messaging, events, and systems — with full control, auditability, and multilingual support.",
+    "flowSteps": [
+      "Messaging / Events",
+      "Deterministic Workflow",
+      "MCP Tools / APIs",
+      "AI Components",
+      "Control + Observer",
+      "System Updates"
+    ],
+    "features": [
+      {
+        "tag": "Messaging & Channels",
+        "title": "Engage customers everywhere",
+        "description": "Support Microsoft Teams, Slack, WhatsApp, Webex, website chat, and more — messaging channels become entry points for business processes."
+      },
+      {
+        "tag": "Events & Triggers",
+        "title": "Trigger workflows from anywhere",
+        "description": "Webhooks, scheduled jobs, SMS, external system events, and API triggers — real-time and event-driven automation at scale."
+      },
+      {
+        "tag": "Workflow Engine",
+        "title": "Controlled execution, every time",
+        "description": "Explicit workflow steps with predictable execution paths. Deterministic by design — no unpredictable agent behaviour. Built for business-critical processes."
+      },
+      {
+        "tag": "MCP Tools & Integrations",
+        "title": "Connect to real business systems",
+        "description": "MCP-based integrations, APIs, OpenAPI services, CRM, ERP, and internal systems — secured via OAuth. AI doesn't just answer — it acts."
+      },
+      {
+        "tag": "AI Components",
+        "title": "AI where it adds value",
+        "description": "Natural language understanding, content generation, classification, and routing — all within controlled workflows. AI is optional — control is mandatory."
+      },
+      {
+        "tag": "Adaptive UI",
+        "title": "Rich user interactions",
+        "description": "Adaptive Cards, structured responses, and guided workflows with multi-channel UI consistency — delivering polished experiences everywhere."
+      },
+      {
+        "tag": "Control Extensions",
+        "title": "Governance built in",
+        "description": "Policy enforcement, routing rules, access control, and business logic constraints. Ensure the right actions happen, every time."
+      },
+      {
+        "tag": "Observer Extensions",
+        "title": "Full visibility and auditability",
+        "description": "Execution tracking, audit logs, monitoring, and analytics hooks. Every action is observable and traceable."
+      },
+      {
+        "tag": "Multilingual",
+        "title": "Global from day one",
+        "description": "50+ languages supported with input and output in any language. Consistent workflows, localised customer experiences. One workflow. Every language."
+      }
+    ]
+  },
+  "builtForReal": {
+    "title": "Built for",
+    "titleHighlight": "production",
+    "titleSuffix": ", not demos",
+    "pillars": [
+      {
+        "title": "Secure Access",
+        "sub": "OAuth-based authentication for every integration. Enterprise-grade from day one."
+      },
+      {
+        "title": "Deterministic Execution",
+        "sub": "Workflows execute exactly as defined. Predictable, testable, auditable."
+      },
+      {
+        "title": "Observability",
+        "sub": "Full visibility into every workflow execution. Trace, debug, and monitor in real time."
+      },
+      {
+        "title": "MCP-based Integration",
+        "sub": "Standard protocol for connecting AI to any system. No custom adapters needed."
+      }
+    ]
+  },
+  "sponsors": {
+    "title": "Backed by",
+    "titleHighlight": "industry leaders",
+    "subtitle": "Greentic is supported by leading technology partners. We are actively looking for additional sponsors — get in touch to join us.",
+    "threePoint": {
+      "name": "3Point.ai",
+      "description": "Get help launching AI solutions with positive ROI. Strategic consulting and implementation partner."
+    },
+    "dataArt": {
+      "name": "DataArt",
+      "description": "Get Greentic certified experts. Global technology consultancy with deep engineering talent."
+    },
+    "ecosystem": {
+      "title": "3AIgent Ecosystem",
+      "description": "{threeAIgent}, built by 3Point.ai and powered by Greentic, is bringing these capabilities to market. 3AIgent will soon be resold by {cisco}, {nutanix}, and other global partners."
+    }
+  },
+  "cta": {
+    "title": "Deploy your first automation in",
+    "titleHighlight": "10 days",
+    "benefits": [
+      "1 production use case",
+      "MCP integration setup",
+      "OAuth configuration",
+      "Production-ready deployment"
+    ],
+    "button": "Book a Pilot"
+  },
+  "developer": {
+    "title": "Start",
+    "titleHighlight": "building",
+    "terminal": "terminal",
+    "readDocs": "Read the Docs",
+    "github": "GitHub"
+  },
+  "footer": {
+    "docs": "Docs",
+    "github": "GitHub",
+    "contact": "Contact",
+    "partners": "Partners",
+    "linkedin": "LinkedIn",
+    "copyright": "© {year} Greentic.ai — AI automation for real business systems."
+  },
+  "languageSelector": {
+    "label": "Language"
+  }
+}
