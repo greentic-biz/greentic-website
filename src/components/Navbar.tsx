@@ -39,6 +39,13 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <button
+            onClick={toggleTheme}
+            className="rounded-lg border border-border p-2 text-muted-foreground transition-colors hover:text-foreground hover:border-primary/40"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
           <a
             href="#cta"
             className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 glow-primary"
