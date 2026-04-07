@@ -1,15 +1,15 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Headphones, Monitor, TrendingUp, Database } from "lucide-react";
+import { ShoppingCart, Monitor, TrendingUp, Database } from "lucide-react";
 
 const useCases = [
   {
-    icon: Headphones,
-    title: "Customer Support Automation",
-    input: "Customer message (any language)",
-    action: "Route → Lookup → Respond",
-    output: "Resolution in customer's language",
-    systems: "Zendesk, Salesforce, WhatsApp",
+    icon: ShoppingCart,
+    title: "Customer Self-Service",
+    input: "Customer request (any language)",
+    action: "Identify → Execute → Confirm",
+    output: "Order placed, account updated, issue resolved",
+    systems: "Shopify, Salesforce, WhatsApp",
     deploy: "5 days",
   },
   {
