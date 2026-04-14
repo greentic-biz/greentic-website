@@ -7,9 +7,7 @@ import LiveDemosSection from "@/components/LiveDemosSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import UseCasesSection from "@/components/UseCasesSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
-import BuiltForRealSection from "@/components/BuiltForRealSection";
 import SponsorsSection from "@/components/SponsorsSection";
-import OfferCTA from "@/components/OfferCTA";
 import DeveloperDocs from "@/components/DeveloperDocs";
 import Footer from "@/components/Footer";
 
@@ -24,9 +22,7 @@ const Index = () => (
     <ComparisonSection />
     <UseCasesSection />
     <HowItWorksSection />
-    <BuiltForRealSection />
     <SponsorsSection />
-    <OfferCTA />
     <DeveloperDocs />
     <Footer />
   </div>
