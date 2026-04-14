@@ -7,7 +7,6 @@ import LiveDemosSection from "@/components/LiveDemosSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import SponsorsSection from "@/components/SponsorsSection";
 import Footer from "@/components/Footer";
-import Footer from "@/components/Footer";
 
 const Index = () => (
   <div className="min-h-screen bg-background">
@@ -18,10 +17,7 @@ const Index = () => (
     <FeaturesSection />
     <LiveDemosSection />
     <ComparisonSection />
-    <UseCasesSection />
-    <HowItWorksSection />
     <SponsorsSection />
-    <DeveloperDocs />
     <Footer />
   </div>
 );
