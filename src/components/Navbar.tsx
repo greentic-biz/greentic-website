@@ -12,7 +12,7 @@ const Navbar = () => {
   const { t } = useI18n();
 
   const navLinks = [
-    { label: t.nav.platform, href: "#demos" },
+    
     { label: t.nav.demos, href: "https://demos.greentic.ai", external: true },
     { label: t.nav.useCases, href: "#use-cases" },
     { label: t.nav.howItWorks, href: "#how-it-works" },
