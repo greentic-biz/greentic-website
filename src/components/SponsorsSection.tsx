@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { useI18n } from "@/i18n/I18nProvider";
+import threePointLogo from "@/assets/3point-logo.jpeg";
+import dataartLogo from "@/assets/dataart-logo.png";
 
 const SponsorsSection = () => {
   const ref = useRef(null);
