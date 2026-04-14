@@ -4,6 +4,7 @@ import DigitalWorkerCarousel from "@/components/DigitalWorkerCarousel";
 import MultilingualSection from "@/components/MultilingualSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import LiveDemosSection from "@/components/LiveDemosSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import SponsorsSection from "@/components/SponsorsSection";
 import OfferCTA from "@/components/OfferCTA";
@@ -17,6 +18,7 @@ const Index = () => (
     <MultilingualSection />
     <FeaturesSection />
     <LiveDemosSection />
+    <HowItWorksSection />
     <ComparisonSection />
     <SponsorsSection />
     <OfferCTA />
