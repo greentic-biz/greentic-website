@@ -42,7 +42,7 @@ const HeroSection = () => {
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }}
             className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <a href="#demos" className="flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-primary ring-1 ring-background/20">
+            <a href="https://demos.greentic.ai" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-primary ring-1 ring-background/20">
               <Rocket size={18} /> {t.hero.ctaDemos}
             </a>
             <a href="#multilingual" className="flex items-center gap-2 rounded-lg border border-border/70 bg-background/80 px-6 py-3 font-semibold text-foreground backdrop-blur-sm transition-all hover:border-primary/40">
