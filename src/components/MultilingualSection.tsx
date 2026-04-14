@@ -32,7 +32,11 @@ const MultilingualSection = () => {
                 </div>
                 <span className="text-xs text-muted-foreground ml-2">{t.multilingual.demoTitle}</span>
               </div>
-              <iframe src="https://store-demo.greentic.ai/" className="w-full h-[500px] md:h-[600px] rounded-b-xl" title="Greentic Multilingual Assistant" allow="clipboard-write" />
+              <div className="w-full h-[500px] md:h-[600px] rounded-b-xl flex flex-col items-center justify-center bg-muted/20">
+                <span className="text-4xl mb-4">🌍</span>
+                <h3 className="text-xl font-semibold text-foreground">Coming Soon</h3>
+                <p className="mt-2 text-sm text-muted-foreground">Interactive multilingual demo launching shortly</p>
+              </div>
             </div>
           </div>
         </motion.div>
