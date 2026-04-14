@@ -5,10 +5,7 @@ import MultilingualSection from "@/components/MultilingualSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import LiveDemosSection from "@/components/LiveDemosSection";
 import ComparisonSection from "@/components/ComparisonSection";
-import UseCasesSection from "@/components/UseCasesSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
 import SponsorsSection from "@/components/SponsorsSection";
-import DeveloperDocs from "@/components/DeveloperDocs";
 import Footer from "@/components/Footer";
 
 const Index = () => (
@@ -20,10 +17,7 @@ const Index = () => (
     <FeaturesSection />
     <LiveDemosSection />
     <ComparisonSection />
-    <UseCasesSection />
-    <HowItWorksSection />
     <SponsorsSection />
-    <DeveloperDocs />
     <Footer />
   </div>
 );
