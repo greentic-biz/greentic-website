@@ -14,7 +14,7 @@ const Navbar = () => {
   const navLinks = [
     
     { label: t.nav.demos, href: "https://demos.greentic.ai", external: true },
-    { label: t.nav.useCases, href: "#use-cases" },
+    { label: t.nav.useCases, href: "#features" },
     { label: t.nav.howItWorks, href: "#demos" },
     { label: t.nav.partners, href: "#sponsors" },
     { label: t.nav.docs, href: "https://docs.greentic.ai", external: true },
