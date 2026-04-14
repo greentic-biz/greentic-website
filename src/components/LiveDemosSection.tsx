@@ -105,10 +105,12 @@ const LiveDemosSection = () => {
                   <h3 className="text-2xl font-bold md:text-3xl text-foreground mb-4">{step.headline}</h3>
                   <p className="text-muted-foreground text-lg leading-relaxed">{step.description}</p>
                   <div className="mt-8 flex gap-3">
-                    <button onClick={() => setActiveStep(Math.max(0, activeStep - 1))} disabled={activeStep === 0}
-                      className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-foreground hover:border-primary/40 disabled:opacity-30 disabled:cursor-not-allowed">
-                      {t.platform.prev}
-                    </button>
+                    {activeStep > 0 && (
+                      <button onClick={() => setActiveStep(activeStep - 1)}
+                        className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-foreground hover:border-primary/40">
+                        {t.platform.prev}
+                      </button>
+                    )}
                     {activeStep < steps.length - 1 && (
                       <button onClick={() => setActiveStep(activeStep + 1)}
                         className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:brightness-110">
