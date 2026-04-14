@@ -352,13 +352,33 @@
     }
   },
   "cta": {
-    "title": "Deploy your first automation in",
-    "titleHighlight": "10 days",
-    "benefits": [
-      "1 production use case",
-      "MCP integration setup",
-      "OAuth configuration",
-      "Production-ready deployment"
+    "title": "Our",
+    "titleHighlight": "3P Methodology",
+    "phases": [
+      {
+        "name": "Proof",
+        "items": [
+          "Validate the opportunity fast by receiving a click-through prototype",
+          "Prove technical viability",
+          "Set measurable success criteria"
+        ]
+      },
+      {
+        "name": "Pilot",
+        "items": [
+          "Launch in a controlled scope",
+          "Demonstrate real business value to internal stakeholders or friendly customers",
+          "Prepare for production rollout"
+        ]
+      },
+      {
+        "name": "Production",
+        "items": [
+          "Deploy into live operations",
+          "Integrate with your environment",
+          "Support scale, governance, and growth"
+        ]
+      }
     ],
     "button": "Book a Pilot"
   },
