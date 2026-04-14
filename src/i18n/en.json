@@ -32,69 +32,39 @@
     "output": "OUTPUT",
     "workers": [
       {
-        "title": "Multilingual Website Assistant",
-        "input": "Customer asks a question in French",
-        "action": "Retrieves product data via API, translates response",
-        "outcome": "Answers fluently in French with accurate info",
-        "steps": [
-          "Bonjour, quel est le prix?",
-          "Language detected: FR",
-          "Query product API",
-          "Translate & format",
-          "Le prix est 49€ — livraison gratuite"
-        ]
+        "title": "Expense Report",
+        "input": "Employee submits expense claim",
+        "action": "Validates receipts, checks policy, routes for approval",
+        "outcome": "Claim approved, reimbursement scheduled",
+        "video": "/demos/expense-claim.mp4"
       },
       {
-        "title": "Customer Self-Service",
-        "input": "Customer submits support request via chat",
-        "action": "Fetches CRM data, checks knowledge base, drafts response",
-        "outcome": "Issue resolved, ticket updated, customer satisfied",
-        "steps": [
-          "My order hasn't arrived",
-          "Lookup customer in CRM",
-          "Check shipping provider API",
-          "Generate resolution",
-          "Shipped today — tracking: TRK829"
-        ]
+        "title": "KPI Dashboard",
+        "input": "Manager requests real-time KPIs",
+        "action": "Aggregates data from multiple systems",
+        "outcome": "Live dashboard with actionable insights",
+        "video": "/demos/kpi-dashboard.mp4"
       },
       {
-        "title": "IT Helpdesk Automation",
-        "input": "Employee sends Teams message about access issue",
-        "action": "Checks identity provider, triggers provisioning API",
-        "outcome": "Access granted, employee notified, audit logged",
-        "steps": [
-          "Can't access the reporting tool",
-          "Verify identity via SSO",
-          "Check role permissions",
-          "Provision access via API",
-          "Access granted ✓ — logged"
-        ]
-      },
-      {
-        "title": "Invoice Approval Workflow",
-        "input": "Invoice received from supplier",
-        "action": "Validates amount, routes to approver, records decision",
-        "outcome": "Invoice approved, payment scheduled, audit trail complete",
-        "steps": [
-          "Invoice #4821 — €12,400",
-          "Match to purchase order",
-          "Route to finance manager",
-          "Approved by J. Smith",
-          "Payment scheduled — logged"
-        ]
-      },
-      {
-        "title": "Order Status Assistant",
+        "title": "Order Tracking",
         "input": "Customer asks: Where is my order?",
         "action": "Queries order system and logistics provider",
         "outcome": "Real-time status with estimated delivery",
-        "steps": [
-          "Where is order #9182?",
-          "Query order database",
-          "Check logistics API",
-          "Format delivery ETA",
-          "Out for delivery — ETA 2pm"
-        ]
+        "video": "/demos/order-tracking.mp4"
+      },
+      {
+        "title": "Weather Forecast",
+        "input": "User requests local weather information",
+        "action": "Fetches forecast data from weather API",
+        "outcome": "Accurate forecast delivered in user's language",
+        "video": "/demos/weather-forecast.mp4"
+      },
+      {
+        "title": "IT Helpdesk",
+        "input": "Employee reports access issue",
+        "action": "Checks identity, triggers provisioning API",
+        "outcome": "Access granted, employee notified, audit logged",
+        "video": "/demos/it-ticket.mp4"
       }
     ],
     "inputLabel": "Input:",
