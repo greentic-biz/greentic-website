@@ -22,7 +22,7 @@ const SponsorsSection = () => {
         <div className="grid gap-8 md:grid-cols-2 max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.1 }}
             className="rounded-2xl border border-border bg-card/50 p-8 text-center transition-all hover:border-primary/30">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl overflow-hidden">
+            <div className="mx-auto mb-4 flex h-12 w-40 items-center justify-center rounded-xl overflow-hidden">
               <img src={threePointLogo} alt="3Point.ai logo" className="h-full w-full object-cover" />
             </div>
             <h3 className="text-xl font-semibold text-foreground">{t.sponsors.threePoint.name}</h3>
@@ -31,8 +31,8 @@ const SponsorsSection = () => {
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.2 }}
             className="rounded-2xl border border-border bg-card/50 p-8 text-center transition-all hover:border-primary/30">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl overflow-hidden bg-white">
-              <img src={dataartLogo} alt="DataArt logo" className="h-full w-full object-contain p-1" />
+            <div className="mx-auto mb-4 flex h-12 w-40 items-center justify-center rounded-xl overflow-hidden bg-white">
+              <img src={dataartLogo} alt="DataArt logo" className="h-full w-full object-contain p-2" />
             </div>
             <h3 className="text-xl font-semibold text-foreground">{t.sponsors.dataArt.name}</h3>
             <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t.sponsors.dataArt.description}</p>
