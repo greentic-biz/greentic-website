@@ -109,10 +109,12 @@ const LiveDemosSection = () => {
                       className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-foreground hover:border-primary/40 disabled:opacity-30 disabled:cursor-not-allowed">
                       {t.platform.prev}
                     </button>
-                    <button onClick={() => setActiveStep(Math.min(steps.length - 1, activeStep + 1))} disabled={activeStep === steps.length - 1}
-                      className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:brightness-110 disabled:opacity-30 disabled:cursor-not-allowed">
-                      {t.platform.next}
-                    </button>
+                    {activeStep < steps.length - 1 && (
+                      <button onClick={() => setActiveStep(activeStep + 1)}
+                        className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:brightness-110">
+                        {t.platform.next}
+                      </button>
+                    )}
                   </div>
                 </motion.div>
               </div>
