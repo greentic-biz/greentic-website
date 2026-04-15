@@ -36,35 +36,35 @@
         "input": "Employee submits expense claim",
         "action": "Validates receipts, checks policy, routes for approval",
         "outcome": "Claim approved, reimbursement scheduled",
-        "video": "/demos/expense-claim.mp4"
+        "video": "demos/expense-claim.mp4"
       },
       {
         "title": "KPI Dashboard",
         "input": "Manager requests real-time KPIs",
         "action": "Aggregates data from multiple systems",
         "outcome": "Live dashboard with actionable insights",
-        "video": "/demos/kpi-dashboard.mp4"
+        "video": "demos/kpi-dashboard.mp4"
       },
       {
         "title": "Order Tracking",
         "input": "Customer asks: Where is my order?",
         "action": "Queries order system and logistics provider",
         "outcome": "Real-time status with estimated delivery",
-        "video": "/demos/order-tracking.mp4"
+        "video": "demos/order-tracking.mp4"
       },
       {
         "title": "Weather Forecast",
         "input": "User requests local weather information",
         "action": "Fetches forecast data from weather API",
         "outcome": "Accurate forecast delivered in user's language",
-        "video": "/demos/weather-forecast.mp4"
+        "video": "demos/weather-forecast.mp4"
       },
       {
         "title": "IT Helpdesk",
         "input": "Employee reports access issue",
         "action": "Checks identity, triggers provisioning API",
         "outcome": "Access granted, employee notified, audit logged",
-        "video": "/demos/it-ticket.mp4"
+        "video": "demos/it-ticket.mp4"
       }
     ],
     "inputLabel": "Input:",
