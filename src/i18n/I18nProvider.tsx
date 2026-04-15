@@ -46,6 +46,7 @@ export { SUPPORTED_LOCALES, LOCALE_NAMES, RTL_LOCALES };
 
 // Cache loaded translations
 const translationCache: Record<string, Translations> = { en: enTranslations };
+const translationModules = import.meta.glob<{ default: Translations }>("./*.json");
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const [locale, setLocaleState] = useState(() => {
@@ -63,8 +64,16 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
       setTranslations(translationCache[loc]);
       return;
     }
+
+    const translationLoader = translationModules[`./${loc}.json`];
+
+    if (!translationLoader) {
+      setTranslations(enTranslations);
+      return;
+    }
+
     try {
-      const module = await import(`./${loc}.json`);
+      const module = await translationLoader();
       translationCache[loc] = module.default;
       setTranslations(module.default);
     } catch {

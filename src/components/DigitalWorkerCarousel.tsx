@@ -2,6 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Receipt, BarChart3, Package, Cloud, Headphones } from "lucide-react";
 import { useI18n } from "@/i18n/I18nProvider";
+import { withBasePath } from "@/lib/site";
 
 const workerIcons = [Receipt, BarChart3, Package, Cloud, Headphones];
 const workerAccents = [
@@ -127,7 +128,7 @@ const DigitalWorkerCarousel = () => {
                   {/* Video demo */}
                   <div className="mb-4 rounded-lg overflow-hidden border border-border/50 bg-muted/30">
                     <video
-                      src={worker.video}
+                      src={withBasePath(worker.video)}
                       autoPlay
                       loop
                       muted
