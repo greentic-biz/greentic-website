@@ -44,7 +44,6 @@ const SponsorsSection = () => {
           <h3 className="text-xl font-semibold text-foreground mb-3">{t.sponsors.ecosystem.title}</h3>
           <p className="text-muted-foreground leading-relaxed">
             <span className="text-primary font-medium">3AIgent</span>, built by 3Point.ai and powered by Greentic, is bringing these capabilities to market.
-            3AIgent will soon be resold by <span className="text-foreground font-medium">Cisco</span>, <span className="text-foreground font-medium">Nutanix</span>, and other global partners.
           </p>
         </motion.div>
       </div>
