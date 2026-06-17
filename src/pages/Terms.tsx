@@ -81,7 +81,7 @@ const Terms = () => {
               <div><span className="font-medium text-foreground">Company name:</span> Greentic AI Ltd</div>
               <div><span className="font-medium text-foreground">Registered office:</span> 63 Lynwood Road, Thames Ditton, KT70DJ, United Kingdom</div>
               <div><span className="font-medium text-foreground">Company registration number:</span> 16820640</div>
-              <div><span className="font-medium text-foreground">VAT number:</span> [Insert VAT number if applicable]</div>
+              
               <div><span className="font-medium text-foreground">Contact email:</span> privacy@greentic.ai</div>
             </CardContent>
           </Card>
