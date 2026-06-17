@@ -1,0 +1,18 @@
+# Greentic.ai
+
+> Greentic.ai builds multilingual AI digital workers that connect to your business systems to automate core processes — reducing cost, increasing speed, and ensuring full auditability.
+
+Greentic AI Ltd is a UK-based company (registered office: 63 Lynwood Road, Thames Ditton, KT7 0DJ, United Kingdom) building deterministic, guided AI workflows for enterprises. Our digital workers handle multilingual customer journeys end-to-end, integrating with the tools and data your business already runs on.
+
+## Pages
+
+- [Home](/): Overview of Greentic.ai digital workers, multilingual AI assistants, features, live demos, and how it works.
+- [Partners](/partners): How Greentic partners help customers discover opportunities, run proof-of-value projects, deliver implementations, integrate systems, and provide managed services.
+- [Privacy Notice](/privacy): How Greentic AI Ltd collects, uses, shares, and protects personal data.
+- [Terms and Conditions](/terms): Terms governing use of Greentic AI Ltd websites, demos, resources, and partner materials.
+
+## Optional
+
+- [Live demos](https://demos.greentic.ai): Interactive digital worker demos.
+- [Documentation](https://docs.greentic.ai): Developer and platform documentation.
+- [Blog](https://greentic-ai.medium.com/): Articles and updates from the Greentic team.

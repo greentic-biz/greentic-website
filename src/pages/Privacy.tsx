@@ -8,21 +8,27 @@ import Navbar from "@/components/Navbar";
 
 const Privacy = () => {
   useEffect(() => {
-    document.title = "Privacy Notice | Greentic AI";
+    const title = "Privacy Notice | Greentic AI";
+    const description =
+      "Privacy Notice for Greentic AI Ltd: how we collect, use, share and protect personal data across Greentic websites and services.";
+    const url = "https://greentic.ai/privacy";
+    document.title = title;
 
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+    const setMeta = (selector: string, attr: string, key: string, content: string) => {
+      let el = document.querySelector(selector) as HTMLMetaElement | null;
       if (!el) {
         el = document.createElement("meta");
-        el.setAttribute("name", name);
+        el.setAttribute(attr, key);
         document.head.appendChild(el);
       }
       el.setAttribute("content", content);
     };
-    setMeta(
-      "description",
-      "Privacy Notice for Greentic AI Ltd: how we collect, use, share and protect personal data across Greentic websites and services.",
-    );
+    setMeta('meta[name="description"]', "name", "description", description);
+    setMeta('meta[property="og:title"]', "property", "og:title", title);
+    setMeta('meta[property="og:description"]', "property", "og:description", description);
+    setMeta('meta[property="og:url"]', "property", "og:url", url);
+    setMeta('meta[name="twitter:title"]', "name", "twitter:title", title);
+    setMeta('meta[name="twitter:description"]', "name", "twitter:description", description);
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) {
@@ -30,7 +36,7 @@ const Privacy = () => {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://greentic.ai/privacy");
+    canonical.setAttribute("href", url);
   }, []);
 
   return (

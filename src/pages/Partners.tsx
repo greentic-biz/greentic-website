@@ -38,27 +38,35 @@ const partnerTypes = [
 
 const Partners = () => {
   useEffect(() => {
-    document.title = "Greentic Partners | Greentic AI";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+    const title = "Greentic Partners | Greentic AI";
+    const description =
+      "Greentic partners help organisations move from AI ideas to practical digital worker solutions across discovery, delivery, integration and managed services.";
+    const url = "https://greentic.ai/partners";
+    document.title = title;
+
+    const setMeta = (selector: string, attr: string, key: string, value: string, content: string) => {
+      let el = document.querySelector(selector) as HTMLMetaElement | null;
       if (!el) {
         el = document.createElement("meta");
-        el.setAttribute("name", name);
+        el.setAttribute(attr, key);
         document.head.appendChild(el);
       }
       el.setAttribute("content", content);
     };
-    setMeta(
-      "description",
-      "Greentic partners help organisations move from AI ideas to practical digital worker solutions across discovery, delivery, integration and managed services.",
-    );
+    setMeta('meta[name="description"]', "name", "description", "description", description);
+    setMeta('meta[property="og:title"]', "property", "og:title", "og:title", title);
+    setMeta('meta[property="og:description"]', "property", "og:description", "og:description", description);
+    setMeta('meta[property="og:url"]', "property", "og:url", "og:url", url);
+    setMeta('meta[name="twitter:title"]', "name", "twitter:title", "twitter:title", title);
+    setMeta('meta[name="twitter:description"]', "name", "twitter:description", "twitter:description", description);
+
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) {
       canonical = document.createElement("link");
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://greentic.ai/partners");
+    canonical.setAttribute("href", url);
   }, []);
 
   return (
