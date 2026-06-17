@@ -82,7 +82,7 @@ const Privacy = () => {
               <div><span className="text-foreground font-medium">Registered office:</span> 63 Lynwood Road, Thames Ditton, KT70DJ, United Kingdom</div>
               <div><span className="text-foreground font-medium">Company registration number:</span> 16820640</div>
               <div><span className="text-foreground font-medium">Privacy contact email:</span> privacy@greentic.ai</div>
-              <div><span className="text-foreground font-medium">Data protection contact:</span> [Insert DPO or privacy contact if applicable]</div>
+              <div><span className="text-foreground font-medium">Data protection contact:</span> privacy@greentic.ai</div>
             </CardContent>
           </Card>
           <p className="text-muted-foreground">
