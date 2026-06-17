@@ -20,7 +20,8 @@ const Footer = () => {
             <a href="https://docs.greentic.ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.docs}</a>
             <a href="https://github.com/greenticai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.github}</a>
             <a href="mailto:hello@greentic.ai" className="transition-colors hover:text-primary">{t.footer.contact}</a>
-            <a href="#sponsors" className="transition-colors hover:text-primary">{t.footer.partners}</a>
+            <Link to="/partners" className="transition-colors hover:text-primary">Partners</Link>
+            <a href="https://partner.greentic.ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">Partner Portal</a>
             <a href="https://www.linkedin.com/company/greentic-ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a>
             <a href="https://greentic-ai.medium.com/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.blog}</a>
             <Link to="/privacy" className="transition-colors hover:text-primary">Privacy Notice</Link>
