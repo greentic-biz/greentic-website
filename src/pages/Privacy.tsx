@@ -464,7 +464,7 @@ const Privacy = () => {
             We may update this Privacy Notice from time to time. When we make changes, we will update the
             “Last updated” date. Significant changes may be highlighted where appropriate.
           </p>
-          <p className="text-muted-foreground">Last updated: [Insert date]</p>
+          <p className="text-muted-foreground">Last updated: 17 June 2026</p>
         </section>
 
         {/* Section 18 */}
