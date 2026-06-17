@@ -477,9 +477,9 @@ const Privacy = () => {
           <Card>
             <CardContent className="space-y-2 p-6 text-sm text-muted-foreground">
               <div className="text-foreground font-medium">Greentic AI Ltd</div>
-              <div><span className="text-foreground font-medium">Privacy contact email:</span> [Insert privacy contact email]</div>
-              <div><span className="text-foreground font-medium">Registered office:</span> [Insert registered office address]</div>
-              <div><span className="text-foreground font-medium">Company registration number:</span> [Insert company registration number]</div>
+              <div><span className="text-foreground font-medium">Privacy contact email:</span> privacy@greentic.ai</div>
+              <div><span className="text-foreground font-medium">Registered office:</span> 63 Lynwood Road, Thames Ditton, KT70DJ, United Kingdom</div>
+              <div><span className="text-foreground font-medium">Company registration number:</span> 16820640</div>
             </CardContent>
           </Card>
         </section>
