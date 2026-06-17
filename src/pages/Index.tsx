@@ -7,6 +7,7 @@ import LiveDemosSection from "@/components/LiveDemosSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import SponsorsSection from "@/components/SponsorsSection";
+import PartnersSection from "@/components/PartnersSection";
 import OfferCTA from "@/components/OfferCTA";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ const Index = () => (
     <HowItWorksSection />
     <ComparisonSection />
     <SponsorsSection />
+    <PartnersSection />
     <OfferCTA />
     <Footer />
   </div>
