@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useI18n } from "@/i18n/I18nProvider";
 import greenticLogo from "@/assets/greentic-logo.png";
 
@@ -22,6 +23,7 @@ const Footer = () => {
             <a href="#sponsors" className="transition-colors hover:text-primary">{t.footer.partners}</a>
             <a href="https://www.linkedin.com/company/greentic-ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a>
             <a href="https://greentic-ai.medium.com/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.blog}</a>
+            <Link to="/privacy" className="transition-colors hover:text-primary">Privacy Notice</Link>
           </div>
         </div>
 
