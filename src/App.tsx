@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { I18nProvider } from "@/i18n/I18nProvider";
 import { getRouterBasename } from "@/lib/site";
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
@@ -23,6 +24,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter basename={routerBasename}>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/privacy" element={<Privacy />} />
