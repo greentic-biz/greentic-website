@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section className="relative isolate min-h-screen overflow-hidden pt-16">
       <div className="pointer-events-none absolute inset-0 z-0">
-        <img src={heroBg} alt="" width={1920} height={1080} className="h-full w-full object-cover object-center opacity-45 dark:opacity-100" />
+        <img src={heroBg} alt="" width={1920} height={1080} fetchPriority="high" decoding="async" className="h-full w-full object-cover object-center opacity-45 dark:opacity-100" />
         <div className="absolute inset-0 bg-background/0 dark:bg-background/50" />
         <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-background to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background via-background/85 to-transparent" />
