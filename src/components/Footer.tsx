@@ -24,6 +24,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/greentic-ai" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.linkedin}</a>
             <a href="https://greentic-ai.medium.com/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">{t.footer.blog}</a>
             <Link to="/privacy" className="transition-colors hover:text-primary">Privacy Notice</Link>
+            <Link to="/terms" className="transition-colors hover:text-primary">Terms and Conditions</Link>
           </div>
         </div>
 
