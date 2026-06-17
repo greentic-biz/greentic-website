@@ -46,7 +46,7 @@ const Privacy = () => {
             Privacy Notice
           </h1>
           <p className="mt-3 text-sm text-muted-foreground">
-            Last updated: [Insert date]
+            Last updated: 17 June 2026
           </p>
         </header>
 
@@ -79,9 +79,9 @@ const Privacy = () => {
             </CardHeader>
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <div><span className="text-foreground font-medium">Company name:</span> Greentic AI Ltd</div>
-              <div><span className="text-foreground font-medium">Registered office:</span> [Insert registered office address]</div>
-              <div><span className="text-foreground font-medium">Company registration number:</span> [Insert company registration number]</div>
-              <div><span className="text-foreground font-medium">Privacy contact email:</span> [Insert privacy contact email, e.g. privacy@greentic.ai]</div>
+              <div><span className="text-foreground font-medium">Registered office:</span> 63 Lynwood Road, Thames Ditton, KT70DJ, United Kingdom</div>
+              <div><span className="text-foreground font-medium">Company registration number:</span> 16820640</div>
+              <div><span className="text-foreground font-medium">Privacy contact email:</span> privacy@greentic.ai</div>
               <div><span className="text-foreground font-medium">Data protection contact:</span> [Insert DPO or privacy contact if applicable]</div>
             </CardContent>
           </Card>

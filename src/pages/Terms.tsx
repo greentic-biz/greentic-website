@@ -43,7 +43,7 @@ const Terms = () => {
           <h1 className="font-display text-4xl font-bold text-foreground md:text-5xl">
             Terms and Conditions
           </h1>
-          <p className="mt-3 text-sm text-muted-foreground">Last updated: [Insert date]</p>
+          <p className="mt-3 text-sm text-muted-foreground">Last updated: 17 June 2026</p>
         </header>
 
         <Card className="mb-6 border-primary/30 bg-primary/5">
@@ -79,10 +79,10 @@ const Terms = () => {
             </CardHeader>
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <div><span className="font-medium text-foreground">Company name:</span> Greentic AI Ltd</div>
-              <div><span className="font-medium text-foreground">Registered office:</span> [Insert registered office address]</div>
-              <div><span className="font-medium text-foreground">Company registration number:</span> [Insert company registration number]</div>
+              <div><span className="font-medium text-foreground">Registered office:</span> 63 Lynwood Road, Thames Ditton, KT70DJ, United Kingdom</div>
+              <div><span className="font-medium text-foreground">Company registration number:</span> 16820640</div>
               <div><span className="font-medium text-foreground">VAT number:</span> [Insert VAT number if applicable]</div>
-              <div><span className="font-medium text-foreground">Contact email:</span> [Insert contact email, e.g. info@greentic.ai]</div>
+              <div><span className="font-medium text-foreground">Contact email:</span> privacy@greentic.ai</div>
             </CardContent>
           </Card>
         </section>
@@ -451,9 +451,9 @@ const Terms = () => {
           <Card>
             <CardContent className="space-y-2 p-6 text-sm text-muted-foreground">
               <div className="font-medium text-foreground">Greentic AI Ltd</div>
-              <div><span className="font-medium text-foreground">Contact email:</span> [Insert contact email]</div>
-              <div><span className="font-medium text-foreground">Registered office:</span> [Insert registered office address]</div>
-              <div><span className="font-medium text-foreground">Company registration number:</span> [Insert company registration number]</div>
+              <div><span className="font-medium text-foreground">Contact email:</span> privacy@greentic.ai</div>
+              <div><span className="font-medium text-foreground">Registered office:</span> 63 Lynwood Road, Thames Ditton, KT70DJ, United Kingdom</div>
+              <div><span className="font-medium text-foreground">Company registration number:</span> 16820640</div>
             </CardContent>
           </Card>
         </section>
@@ -461,7 +461,7 @@ const Terms = () => {
         {/* 22 */}
         <section className="mb-12">
           <h2 className="mb-4 font-display text-2xl font-bold text-foreground">22. Last updated</h2>
-          <p className="text-muted-foreground">Last updated: [Insert date]</p>
+          <p className="text-muted-foreground">Last updated: 17 June 2026</p>
         </section>
 
         <Separator className="my-10" />
