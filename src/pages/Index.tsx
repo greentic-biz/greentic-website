@@ -14,16 +14,18 @@ import Footer from "@/components/Footer";
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
-    <HeroSection />
-    <DigitalWorkerCarousel />
-    <MultilingualSection />
-    <FeaturesSection />
-    <LiveDemosSection />
-    <HowItWorksSection />
-    <ComparisonSection />
-    <SponsorsSection />
-    <PartnersSection />
-    <OfferCTA />
+    <main>
+      <HeroSection />
+      <DigitalWorkerCarousel />
+      <MultilingualSection />
+      <FeaturesSection />
+      <LiveDemosSection />
+      <HowItWorksSection />
+      <ComparisonSection />
+      <SponsorsSection />
+      <PartnersSection />
+      <OfferCTA />
+    </main>
     <Footer />
   </div>
 );
