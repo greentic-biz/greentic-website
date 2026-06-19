@@ -22,7 +22,7 @@ const HowItWorksSection = () => {
   const { t } = useI18n();
 
   return (
-    <section id="how-it-works" className="py-24 bg-grid relative" ref={ref}>
+    <section id="how-it-works" className="py-24 bg-grid relative overflow-hidden" ref={ref}>
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary/[0.03] blur-[120px]" />
       </div>
