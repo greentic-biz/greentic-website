@@ -31,7 +31,9 @@ const MultilingualSection = () => {
             {t.multilingual.badge}
           </span>
           <h2 className="mt-4 text-3xl font-bold md:text-5xl">
-            {t.multilingual.title} <span className="text-gradient-primary">{t.multilingual.titleHighlight}</span>
+            {t.multilingual.title}
+            <br />
+            <span className="text-gradient-primary">{t.multilingual.titleHighlight}</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">{t.multilingual.subtitle}</p>
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground">{t.multilingual.subtitle2}</p>
