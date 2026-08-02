@@ -101,14 +101,6 @@ const MultilingualSection = () => {
                   <div className="absolute bottom-3 right-3 flex gap-2">
                     <button
                       type="button"
-                      onClick={toggleMute}
-                      aria-label={muted ? "Unmute video" : "Mute video"}
-                      className="rounded-full bg-background/70 p-2 text-foreground backdrop-blur-sm transition-colors hover:text-primary"
-                    >
-                      {muted ? <VolumeX size={16} /> : <Volume2 size={16} />}
-                    </button>
-                    <button
-                      type="button"
                       onClick={() => setExpanded((e) => !e)}
                       aria-label={expanded ? "Shrink video" : "Expand video"}
                       className="rounded-full bg-background/70 p-2 text-foreground backdrop-blur-sm transition-colors hover:text-primary"
