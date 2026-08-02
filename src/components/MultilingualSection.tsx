@@ -2,7 +2,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Maximize2, Minimize2 } from "lucide-react";
 import { useI18n } from "@/i18n/I18nProvider";
-import demoVideo from "@/assets/greentic-acme-demo.mp4.asset.json";
+import demoVideoAsset from "@/assets/greentic-acme-demo.mp4.asset.json";
+
+// The CDN asset path is only served by Lovable hosting, so use an absolute URL
+// that also works on other hosts (e.g. GitHub Pages).
+const demoVideoUrl = `https://greentic-website.lovable.app${demoVideoAsset.url}`;
 
 const MultilingualSection = () => {
   const ref = useRef(null);
@@ -70,7 +74,7 @@ const MultilingualSection = () => {
                 <div className="relative aspect-video w-full">
                   <video
                     ref={videoRef}
-                    src={demoVideo.url}
+                    src={demoVideoUrl}
                     className="absolute inset-0 h-full w-full cursor-pointer object-cover motion-reduce:[animation:none]"
                     autoPlay
                     muted
