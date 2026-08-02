@@ -124,3 +124,4 @@ const MultilingualSection = () => {
 };
 
 export default MultilingualSection;
+
