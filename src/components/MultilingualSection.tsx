@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Volume2, VolumeX, Maximize2, Minimize2 } from "lucide-react";
+import { Maximize2, Minimize2 } from "lucide-react";
 import { useI18n } from "@/i18n/I18nProvider";
 import demoVideo from "@/assets/greentic-acme-demo.mp4.asset.json";
 
@@ -9,15 +9,9 @@ const MultilingualSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const { t } = useI18n();
-  const [muted, setMuted] = useState(true);
   const [expanded, setExpanded] = useState(false);
 
-  const toggleMute = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    v.muted = !v.muted;
-    setMuted(v.muted);
-  };
+
 
   return (
     <section id="multilingual" className="relative py-24 overflow-hidden" ref={ref}>
