@@ -74,7 +74,7 @@ const MultilingualSection = () => {
                 <div className="relative aspect-video w-full">
                   <video
                     ref={videoRef}
-                    src={demoVideo.url}
+                    src={demoVideoUrl}
                     className="absolute inset-0 h-full w-full cursor-pointer object-cover motion-reduce:[animation:none]"
                     autoPlay
                     muted
