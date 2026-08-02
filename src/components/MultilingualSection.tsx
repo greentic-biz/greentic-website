@@ -17,24 +17,29 @@ const MultilingualSection = () => {
     <section id="multilingual" className="relative py-24 overflow-hidden" ref={ref}>
       <div className="pointer-events-none absolute top-0 left-0 h-[400px] w-[400px] rounded-full bg-primary/5 blur-[120px]" />
       <div className="container mx-auto px-4">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="mx-auto max-w-3xl text-center"
+        >
+          <span className="mb-4 inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm text-primary">
+            {t.multilingual.badge}
+          </span>
+          <h2 className="mt-4 text-3xl font-bold md:text-5xl">
+            {t.multilingual.title} <span className="text-gradient-primary">{t.multilingual.titleHighlight}</span>
+          </h2>
+          <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">{t.multilingual.subtitle}</p>
+          <p className="mx-auto mt-3 max-w-xl text-muted-foreground">{t.multilingual.subtitle2}</p>
+        </motion.div>
+
+        <div className="mt-12 grid items-center gap-12 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <div className="text-center">
-              <span className="mb-4 inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm text-primary">
-                {t.multilingual.badge}
-              </span>
-              <h2 className="mt-4 text-3xl font-bold md:text-5xl">
-                {t.multilingual.title} <span className="text-gradient-primary">{t.multilingual.titleHighlight}</span>
-              </h2>
-              <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">{t.multilingual.subtitle}</p>
-              <p className="mx-auto mt-3 max-w-xl text-muted-foreground">{t.multilingual.subtitle2}</p>
-            </div>
-
-            <ol className="mt-8 space-y-4">
+            <ol className="space-y-4">
               {(t.multilingual.steps ?? []).map((step, i) => (
                 <li key={step.title} className="flex gap-4">
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-sm font-semibold text-primary">
@@ -47,30 +52,8 @@ const MultilingualSection = () => {
                 </li>
               ))}
             </ol>
-
-            <div className="text-center">
-              <p className="mt-8 inline-block rounded-lg border border-primary/20 bg-secondary/40 px-4 py-2 font-mono text-sm text-primary">
-                {t.multilingual.progression}
-              </p>
-
-              <div className="mt-8 flex flex-wrap justify-center gap-3">
-                <a
-                  href="#cta"
-                  className="rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 glow-primary"
-                >
-                  {t.multilingual.ctaPrimary}
-                </a>
-                <a
-                  href="https://partner.greentic.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-lg border border-border px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:text-primary"
-                >
-                  {t.multilingual.ctaSecondary}
-                </a>
-              </div>
-            </div>
           </motion.div>
+
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
