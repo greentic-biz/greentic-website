@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Volume2, VolumeX, Maximize2, Minimize2 } from "lucide-react";
+import { Maximize2, Minimize2 } from "lucide-react";
 import { useI18n } from "@/i18n/I18nProvider";
 import demoVideo from "@/assets/greentic-acme-demo.mp4.asset.json";
 
@@ -9,15 +9,9 @@ const MultilingualSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const { t } = useI18n();
-  const [muted, setMuted] = useState(true);
   const [expanded, setExpanded] = useState(false);
 
-  const toggleMute = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    v.muted = !v.muted;
-    setMuted(v.muted);
-  };
+
 
   return (
     <section id="multilingual" className="relative py-24 overflow-hidden" ref={ref}>
@@ -99,14 +93,6 @@ const MultilingualSection = () => {
                     onClick={() => setExpanded((e) => !e)}
                   />
                   <div className="absolute bottom-3 right-3 flex gap-2">
-                    <button
-                      type="button"
-                      onClick={toggleMute}
-                      aria-label={muted ? "Unmute video" : "Mute video"}
-                      className="rounded-full bg-background/70 p-2 text-foreground backdrop-blur-sm transition-colors hover:text-primary"
-                    >
-                      {muted ? <VolumeX size={16} /> : <Volume2 size={16} />}
-                    </button>
                     <button
                       type="button"
                       onClick={() => setExpanded((e) => !e)}
