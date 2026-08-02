@@ -39,7 +39,7 @@ const MultilingualSection = () => {
             <p className="mt-3 max-w-xl text-muted-foreground">{t.multilingual.subtitle2}</p>
 
             <ol className="mt-8 space-y-4">
-              {t.multilingual.steps.map((step, i) => (
+              {(t.multilingual.steps ?? []).map((step, i) => (
                 <li key={step.title} className="flex gap-4">
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-sm font-semibold text-primary">
                     {i + 1}
