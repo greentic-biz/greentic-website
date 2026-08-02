@@ -73,11 +73,28 @@
   },
   "multilingual": {
     "badge": "Core Differentiator",
-    "title": "Your business,",
-    "titleHighlight": "every language",
-    "subtitle": "Customers interact in their own language. Workflows remain deterministic. Systems stay consistent.",
-    "quote": "\"Your customer speaks Spanish. Your systems speak English. Greentic connects both.\"",
-    "demoTitle": "Multilingual Assistant Demo"
+    "title": "Stop talking about AI.",
+    "titleHighlight": "Design your business with it.",
+    "subtitle": "Describe the business problem in plain language. Greentic turns it into a working AI-powered process you can experience, refine and demonstrate—often in the first meeting.",
+    "subtitle2": "Once the journey is proven, Greentic and its forward deployment engineering partners take it from demo to governed production in weeks, not months or years.",
+    "steps": [
+      {
+        "title": "Describe the problem",
+        "description": "Explain what is slow, manual or broken today."
+      },
+      {
+        "title": "Experience the solution",
+        "description": "Generate a working demonstration with real journeys, integrations, approvals and human decisions."
+      },
+      {
+        "title": "Deploy in weeks",
+        "description": "Refine the demo with a forward deployment engineering team and move it into controlled production."
+      }
+    ],
+    "progression": "Problem → Working demo → Production",
+    "videoCaption": "From first conversation to working demo. From demo to production in weeks.",
+    "ctaPrimary": "Book a Demo",
+    "ctaSecondary": "See how partners deliver"
   },
   "features": {
     "title": "From AI to",
