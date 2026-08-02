@@ -95,6 +95,29 @@ const MultilingualSection = () => {
             </div>
           </motion.div>
         </div>
+
+        <div className="mt-12 text-center">
+          <p className="inline-block rounded-lg border border-primary/20 bg-secondary/40 px-4 py-2 font-mono text-sm text-primary">
+            {t.multilingual.progression}
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <a
+              href="#cta"
+              className="rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 glow-primary"
+            >
+              {t.multilingual.ctaPrimary}
+            </a>
+            <a
+              href="https://partner.greentic.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-border px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:text-primary"
+            >
+              {t.multilingual.ctaSecondary}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
