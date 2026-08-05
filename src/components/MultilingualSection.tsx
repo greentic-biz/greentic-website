@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Maximize2, Minimize2 } from "lucide-react";
 import { useI18n } from "@/i18n/I18nProvider";
-import demoVideoAsset from "@/assets/greentic-acme-demo.mp4.asset.json";
+import demoVideoAsset from "@/assets/greentic-northstar-acme.mp4.asset.json";
 
 // The CDN asset path is only served by Lovable hosting, so use an absolute URL
 // that also works on other hosts (e.g. GitHub Pages).
