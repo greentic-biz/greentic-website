@@ -214,9 +214,10 @@
       "title": "Greentic",
       "subtitle": "AI automation platform",
       "how": [
-        "Deterministic workflows",
-        "Explicit capabilities (MCP / APIs)",
-        "AI used where needed, not everywhere",
+        "Fast & low cost deterministic workflows",
+        "Agentic workers offer flexibility",
+        "Easy to integrate (MCP, OpenAPI2MCP generator, SSO)",
+        "Make changes via prompting",
         "Full control + audit"
       ],
       "result": [
